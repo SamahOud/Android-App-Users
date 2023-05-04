@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5AA5AC"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Play more... Add Points more"
+            android:textSize="25sp"
+            android:textColor="#365E38"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login to start the game"
+            android:textSize="25sp"
+            android:textColor="#365E38"
+            android:textStyle="italic"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:text=""
+            android:hint="User Name"
+            android:textSize="25dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/icon1_username"/>
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:text=""
+            android:hint="Password"
+            android:textSize="25dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/icon1_lock"/>
+
+        <TextView
+            android:id="@+id/txtPoints"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:text=""
+            android:hint="Points"
+            android:textSize="25dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/icon1_point"/>
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="15dp"
+            android:text="Profile"
+            android:ems="10"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:ems="10"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F2ED"
+    tools:context=".Contact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:textColor="#797979"
+            android:textSize="28sp"
+            android:textStyle="italic|bold"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="15dp"
+            android:drawableStart="@drawable/icon_contact_page"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/tabLocation"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:src="@drawable/location"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="allow the app to access your Location"
+                android:layout_marginVertical="13dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/phone_input"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write a phone number"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/icon_phone" />
+
+            <EditText
+                android:id="@+id/sms_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your message here ..."
+                android:layout_marginTop="10dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/icon_message" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Call"
+                    android:backgroundTint="#ABEBC6"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/button_green"/>
+
+                <Button
+                    android:id="@+id/btnSms"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="sms"
+                    android:backgroundTint="#ABEBC6"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/button_green"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email Address..."
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="30dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/icon_email" />
+
+            <EditText
+                android:id="@+id/email_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject:"
+                android:inputType="textEmailSubject"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/icon_subject"/>
+
+            <EditText
+                android:id="@+id/email_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Message..."
+                android:inputType="text|textCapSentences"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/icon_message" />
+
+            <Button
+                android:id="@+id/btnMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="send email"
+                android:backgroundTint="#ABEBC6"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_green"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

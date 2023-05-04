@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#446C71"
+    tools:context=".Game">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Math"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="italic|bold"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/math"/>
+
+        <TextView
+            android:id="@+id/tvMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#1B2327"
+            android:hint="Username:"
+            android:textColor="#1B2327"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="5dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/icon_person" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#1B2327"
+            android:hint="Points:"
+            android:textColor="#1B2327"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="5dp"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/icon_point"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add the two numbers and make Points"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#1B2327"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_input"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/plus"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_input"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/equal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Result"
+            android:background="@drawable/button_input"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_green"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnGameOver"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Game Over"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_red"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>
